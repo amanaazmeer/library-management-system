@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <!-- Title TextView -->
+    <TextView
+        android:id="@+id/textViewPageTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Book Management"
+        android:textSize="24sp"
+        android:textColor="#002244"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <!-- Input fields for book details -->
+    <TextView
+        android:id="@+id/textViewBookIdLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Book ID:"
+        android:textColor="#002244"
+        android:textSize="18sp"
+        android:layout_below="@id/textViewPageTitle"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp" />
+
+    <EditText
+        android:id="@+id/editTextBookId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewBookIdLabel"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:inputType="text"
+        android:hint="Enter Book ID"
+        android:backgroundTint="#002244"
+        android:textColor="#002244" />
+
+    <TextView
+        android:id="@+id/textViewTitleLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title:"
+        android:textColor="#002244"
+        android:textSize="18sp"
+        android:layout_below="@id/editTextBookId"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp" />
+
+    <EditText
+        android:id="@+id/editTextTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTitleLabel"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:inputType="text"
+        android:hint="Enter Title"
+        android:backgroundTint="#002244"
+        android:textColor="#002244" />
+
+    <TextView
+        android:id="@+id/textViewPublisherLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Publisher:"
+        android:textColor="#002244"
+        android:textSize="18sp"
+        android:layout_below="@id/editTextTitle"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp" />
+
+    <EditText
+        android:id="@+id/editTextPublisher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewPublisherLabel"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:inputType="text"
+        android:hint="Enter Publisher"
+        android:backgroundTint="#002244"
+        android:textColor="#002244" />
+
+    <!-- Buttons to perform CRUD operations -->
+    <LinearLayout
+        android:id="@+id/buttonLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPublisher"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+
+        <Button
+            android:id="@+id/buttonAddBook"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Add Book"
+            android:textColor="#FFFFFF"
+            android:background="#002244"
+            android:padding="12dp"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/buttonUpdateBook"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Update Book"
+            android:textColor="#FFFFFF"
+            android:background="#002244"
+            android:padding="12dp"
+            android:layout_marginStart="8dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonLayout1"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/buttonDeleteBook"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Delete Book"
+            android:textColor="#FFFFFF"
+            android:background="#002244"
+            android:padding="12dp"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/buttonViewBooks"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="View Books"
+            android:textColor="#FFFFFF"
+            android:background="#002244"
+            android:padding="12dp"
+            android:layout_marginStart="8dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

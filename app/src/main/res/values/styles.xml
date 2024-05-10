@@ -1,0 +1,22 @@
+<resources>
+    <!-- Style for the logo -->
+    <style name="LogoStyle">
+        <item name="android:layout_width">120dp</item>
+        <item name="android:layout_height">120dp</item>
+        <item name="android:src">@drawable/logo</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">40dp</item>
+    </style>
+
+    <style name="RoundedBackground">
+        <item name="android:background">@drawable/rounded_background</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme attributes as needed -->
+        <item name="android:windowBackground">@drawable/splash_background</item>
+        <!-- Add any other customizations here -->
+    </style>
+
+</resources>

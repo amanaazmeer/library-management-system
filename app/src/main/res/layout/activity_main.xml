@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <!-- Logo ImageView -->
+    <ImageView
+        android:id="@+id/image_logo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/logo"
+        android:background="@drawable/rounded_background"
+        android:scaleType="centerCrop"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp" />
+
+    <!-- App Name TextView -->
+    <TextView
+        android:id="@+id/text_app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="24sp"
+        android:textColor="#002244"
+        android:layout_below="@id/image_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp" />
+
+    <!-- App Description TextView -->
+    <TextView
+        android:id="@+id/text_app_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/logo_description"
+        android:textSize="12sp"
+        android:textColor="#002244"
+        android:layout_below="@id/text_app_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp" />
+
+    <!-- Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/text_app_description"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp">
+
+        <!-- Example button to navigate to Book activity -->
+        <Button
+            android:id="@+id/button_book"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Manage Books"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_premium_background"
+            android:textSize="22sp"
+            android:elevation="8dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Example button to navigate to Publisher activity -->
+        <Button
+            android:id="@+id/button_publisher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Manage Publishers"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_premium_background"
+            android:textSize="22sp"
+            android:elevation="8dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Example button to navigate to Branch activity -->
+        <Button
+            android:id="@+id/button_branch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Manage Branches"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_premium_background"
+            android:textSize="22sp"
+            android:elevation="8dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Example button to navigate to Member activity -->
+        <Button
+            android:id="@+id/button_member"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Manage Members"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_premium_background"
+            android:textSize="22sp"
+            android:elevation="8dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Example button to navigate to Book Loan activity -->
+        <Button
+            android:id="@+id/button_book_loan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Manage Book Loans"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_premium_background"
+            android:textSize="22sp"
+            android:elevation="8dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

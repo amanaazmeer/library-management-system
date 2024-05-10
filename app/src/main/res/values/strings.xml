@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Library Management System</string>
+    <string name="logo_description"> Efficiently tracks library book borrowing</string>
+</resources>
